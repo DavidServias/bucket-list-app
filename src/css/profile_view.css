@@ -1,0 +1,102 @@
+:root {
+    --heightA : 400px;
+    --background-color: #ffffff;
+    --app-bar-color:  #a7ce3b;
+}
+
+#about-me-container {
+    /* padding: 5%; */
+    /* border: red 2px solid; */
+    height: var(--heightA);
+    
+    
+}
+
+#about-me-container img {
+    width: 80%; 
+    /* border: red 2px solid; */
+    background-color: var(--background-color);
+}
+
+
+/* xs, extra-small: 0px
+sm, small: 600px
+md, medium: 900px
+lg, large: 1200px
+xl, extra-large: 1536px */
+
+
+@media only screen and (max-width: 600px) {
+    #about-me-container img {
+        width: 50%; 
+
+    }
+} 
+
+@media only screen and (max-width: 200px) {
+    #about-me-container img {
+        width: 90%; 
+
+    }
+}
+
+/* @media only screen and (min-width: 600px) {
+    #about-me-container img {
+        width: 40%; 
+
+    }
+} */
+
+@media only screen and (min-width: 600px) {
+    #about-me-container img {
+        width: 80%; 
+
+    }
+}
+
+
+#bucket-list-container {
+    width: 70%;
+    margin: auto;
+    height: var(--heightA);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* border: red 2px solid; */
+    background-color: var(--background-color);
+}
+
+
+#followed-list-container  {
+    border: none;
+    background-color: var(--background-color);
+
+}
+#people-list-container {
+    height: var(--heightA);
+    background-color: var(--background-color);
+}
+
+#deep-thought-container {
+    height: var(--heightA);
+    background-color: var(--background-color);
+    width: 70%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #bucket-list-container, #deep-thought-container {
+        width: 90%; 
+
+    }
+}
+
+
+
+.heading {
+    font-size: 2em;
+}
+
+.headin2 {
+    font-size: 1.5em;
+}

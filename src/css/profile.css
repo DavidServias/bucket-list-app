@@ -1,0 +1,68 @@
+.main-top-row-box {
+    height: 90vh; 
+    margin: 2%;
+}
+
+.main-top-row-div  {
+    border:blue solid 3px;  
+}
+
+.bucket-list, .buddy-list {
+    overflow: scroll;
+    max-height: 100%;
+}
+
+.item, .buddy {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.item-left, .item-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-left {
+    align-items: left;
+}
+
+.item-right {
+    align-items: right;
+}
+
+.bucket-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.bucket-img-box .bucket-img {
+    border: pink solid 2px;
+    min-height: 300px;
+    min-width: 320px;
+}
+
+.bucket-icon {
+    color:#577590;
+    margin-right: 5px;
+}
+
+.square-icon, .trash-icon {
+    color: gray;
+    margin-right: 5px;
+}
+
+h2 {
+    text-align: justify;
+}
+
+.bucket-list-container {
+    margin: 2%;
+    padding: 0px;
+}
+ 
+h3 {
+    margin: 0px;
+}

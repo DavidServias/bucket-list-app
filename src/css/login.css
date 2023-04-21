@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #a7ce3b;
+    --color1: #F94144;
+    --color2: #F3722C;
+    --color3: #F8961E;
+    --color4: #F9C74F;
+    --color5: #90BE6D;
+    --color6: #43AA8B;
+    --color7: #577590;
+    --button-width: 290px;
+
+    --box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .Login-Button {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .form {
+    max-width: 330px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color3);
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .textField {
+    width: var(--button-width);
+  }
+
+  .form .form__custom-button {
+    margin-top: 12px;
+    box-shadow: var(--box-shadow);
+    min-height: auto;
+    width: var(--button-width);
+    background-color: var(--color7); 
+    color: var(--color4);
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    padding: 12px 30px;
+    margin: .3125rem 1px;
+    font-size: 12px;
+    font-weight: 600;
+    /* textTransform: "uppercase", */
+    letter-spacing: 0;
+    will-change: box-shadow, transform;
+    /* transition:
+      box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1); */
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    
+}
+
+.google_button {
+  width: var(--button-width);
+}
+
+.form__custom-button:hover, .form__custom-button:focus {
+    color: #FFFFFF;
+    background-color:#333 !important;
+    box-shadow: 0 5px 10px -6px gray;
+}  
