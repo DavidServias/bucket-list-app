@@ -5,8 +5,8 @@ import AnimatedBackground from './animated_background';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import api from "./apiCalls";
-require('dotenv').config();
-const jwt  = require('jsonwebtoken');
+//require('dotenv').config();
+//const jwt  = require('jsonwebtoken');
 
 
 //PROPS
@@ -56,29 +56,29 @@ export default class LoginScreen extends Component {
      }
 
     async handleGoogleResponse(response) {
-        console.log("handleGoogleResponse()");
-        // decode google response and save to userGoogleData
-        var googleData = jwt.decode(response.credential);
-        console.log("google data:" + googleData);
-        // check to see if google user already has a profile:
-        let profileData = await this.props.lookUpUser(googleData['sub']);
-        console.log("profile data: " + profileData);
-        // if googleUser is does not have a BucketList profile,
-        // show create account form.
-        if (profileData.message === "no profile matching that user_identifier") {
-            console.log("no profile data");
-            let newUserData = {
-                "google_verified": true,//maybe backend doesn't need this?
-                "user_identifier" : googleData['sub']
-            };
-            this.props.showCreateProfile(newUserData);
-        // If google user has a profile already, set user in state to
-        // this user, and show profile view.
-        } else {
-            console.log("profile data found");
-            this.props.showProfileView(profileData, false);
-            // change true to false after guestview is working
-        }
+        // console.log("handleGoogleResponse()");
+        // // decode google response and save to userGoogleData
+        // var googleData = jwt.decode(response.credential);
+        // console.log("google data:" + googleData);
+        // // check to see if google user already has a profile:
+        // let profileData = await this.props.lookUpUser(googleData['sub']);
+        // console.log("profile data: " + profileData);
+        // // if googleUser is does not have a BucketList profile,
+        // // show create account form.
+        // if (profileData.message === "no profile matching that user_identifier") {
+        //     console.log("no profile data");
+        //     let newUserData = {
+        //         "google_verified": true,//maybe backend doesn't need this?
+        //         "user_identifier" : googleData['sub']
+        //     };
+        //     this.props.showCreateProfile(newUserData);
+        // // If google user has a profile already, set user in state to
+        // // this user, and show profile view.
+        // } else {
+        //     console.log("profile data found");
+        //     this.props.showProfileView(profileData, false);
+        //     // change true to false after guestview is working
+        // }
     }
  
     handleChange(e) {

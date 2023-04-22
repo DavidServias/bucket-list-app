@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 //import FullWidthGrid from './gridtest';
 // import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 // dotenv.config()
-require('dotenv').config();
+//require('dotenv').config();
 console.log("test 2");
 console.log(process.env);
 
