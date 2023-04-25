@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/App.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import ProfileView from '../components/profile_view';
+import ProfileView from '../components/profile_view';
 import api from '../src/apiCalls';
 import LoginScreen from '../components/login';
 import CreateProfileForm from '../components/createProfileForm';
@@ -122,7 +122,7 @@ class App extends React.Component  {
           />) 
           : null}
 
-        {/* {(this.state.showProfile) ?
+        {(this.state.showProfile) ?
           <ProfileView 
             
             data = {(this.state.guestView) ? this.state.profileBeingVisited : 
@@ -144,7 +144,7 @@ class App extends React.Component  {
             // visitProfile = {this.visitProfile}
           /> 
           : null
-        } */}
+        }
 
         {(this.state.showCreateAccount) ? 
           <CreateProfileForm

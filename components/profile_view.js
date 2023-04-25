@@ -1,13 +1,13 @@
 import React from 'react';
-import './css/profile_view.css';
-import MyAppBar from './app_bar.js';
-import BucketList from './bucket_list';
-import PeopleList from './people_list';
-import AboutMe from './about_me';
+import '../styles/profile_view.module.css';
+import MyAppBar from '../components/app_bar.js';
+import BucketList from '../components/bucket_list';
+import PeopleList from '../components/people_list';
+import AboutMe from '../components/about_me';
 import Box from '@mui/material/Box';
-import DeepThoughts from './deep_thoughts';
+import DeepThoughts from '../components/deep_thoughts';
 import Grid from '@mui/material/Grid';
-import AnimatedBackground from '../components/animated_background';
+import AnimatedBackground from './animated_background';
 
 //PROPS:
 // profileName

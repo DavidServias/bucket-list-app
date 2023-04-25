@@ -1,5 +1,5 @@
 
-const API_URL_BASE = process.env.REACT_APP_API_URL_BASE;
+const API_URL_BASE = process.env.NEXT_PUBLIC_API_URL_BASE;
 
 
 /*******************************************************
@@ -51,7 +51,7 @@ async function createUser(data) {
 //  await api.removeThought(this.props.userIdentifier, this.props.thought_id);
 async function loginWithPassword(requestBody) {
     console.log("loginWithPassword()");
-    console.log("test:" + API_URL_BASE);
+    console.log("test 1:" + API_URL_BASE);
     let url = API_URL_BASE + '/login/password'
     console.log("body:" + requestBody);
     console.log(url);
