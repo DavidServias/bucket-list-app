@@ -7,7 +7,7 @@ import AboutMe from './about_me';
 import Box from '@mui/material/Box';
 import DeepThoughts from './deep_thoughts';
 import Grid from '@mui/material/Grid';
-import AnimatedBackground from './animated_background';
+import AnimatedBackground from '../components/animated_background';
 
 //PROPS:
 // profileName
