@@ -7,3 +7,18 @@
   --color6: #43AA8B;
   --color7: #577590;
 }
+
+/*copied from login.css*/
+:root {
+  --primary-color: #a7ce3b;
+  --color1: #F94144;
+  --color2: #F3722C;
+  --color3: #F8961E;
+  --color4: #F9C74F;
+  --color5: #90BE6D;
+  --color6: #43AA8B;
+  --color7: #577590;
+  --button-width: 290px;
+
+  --box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+}

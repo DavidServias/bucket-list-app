@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from '../styles/App.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import ProfileView from '../src/profile_view';
+// import ProfileView from '../components/profile_view';
 import api from '../src/apiCalls';
-//import LoginScreen from '../src/login';
-//import CreateProfileForm from '../src/createProfileForm';
+import LoginScreen from '../components/login';
+import CreateProfileForm from '../components/createProfileForm';
 import AnimatedBackground from '../components/animated_background';
 //require('dotenv').config();
 
@@ -114,7 +114,7 @@ class App extends React.Component  {
       <div className={styles} >
         <h1 className={styles.heading}>Welcome to BucketList</h1>
           <AnimatedBackground/> 
-        {/* { (this.state.showLogin) ?
+        { (this.state.showLogin) ?
           (<LoginScreen 
             lookUpUser = {this.lookUpUser}
             showProfileView = {this.showProfileView}
@@ -122,7 +122,7 @@ class App extends React.Component  {
           />) 
           : null}
 
-        {(this.state.showProfile) ?
+        {/* {(this.state.showProfile) ?
           <ProfileView 
             
             data = {(this.state.guestView) ? this.state.profileBeingVisited : 
@@ -144,14 +144,14 @@ class App extends React.Component  {
             // visitProfile = {this.visitProfile}
           /> 
           : null
-        }
+        } */}
 
         {(this.state.showCreateAccount) ? 
           <CreateProfileForm
             newUserData={this.state.user}
             showProfileView={this.showProfileView}
           /> : null
-        } */}
+        }
 
       </div>    
     );
