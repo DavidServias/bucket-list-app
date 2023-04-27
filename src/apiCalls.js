@@ -68,15 +68,6 @@ async function loginWithPassword(requestBody) {
 };
 
 
-
-
-
-
-
-
-
-
-
 // const updateStatus = async (req, res) => {
     //     try {
     //         const userId = req.params.id;

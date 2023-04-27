@@ -112,7 +112,7 @@ class App extends React.Component  {
   render() {
     return (
       <div className={styles} >
-        <h1 className={styles.heading}>Welcome to BucketList</h1>
+        <h1 className={styles.heading}>Welcome!</h1>
           <AnimatedBackground/> 
         { (this.state.showLogin) ?
           (<LoginScreen 
