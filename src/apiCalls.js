@@ -51,7 +51,7 @@ async function createUser(data) {
 //  await api.removeThought(this.props.userIdentifier, this.props.thought_id);
 async function loginWithPassword(requestBody) {
     console.log("loginWithPassword()");
-    console.log("test 1:" + API_URL_BASE);
+    console.log("api_url_base:" + API_URL_BASE);
     let url = API_URL_BASE + '/login/password'
     console.log("body:" + requestBody);
     console.log(url);
