@@ -103,7 +103,12 @@ export default class LoginScreen extends Component {
         body += '"password" : "' + this.state.password + '"}';
         console.log("body:" + body);
         //let body = '{ "profile_name": "Sleepy","password": "password"}';
-        let profileData = await api.loginWithPassword(body);
+        let options = {
+            method: 'POST',
+            headers: {'Content-Type':'application/json;charset=utf-8'},
+            body: body
+        };
+        let profileData = await api.loginWithPassword(body, options);
         if (profileData.message === "no profile matching that user_identifier") {
             console.log("error");
         // If google user has a profile already, set user in state to
