@@ -1,5 +1,4 @@
-//require('dotenv').config();
-
+// Decide whether to use dev or prod api url
 let API_URL_BASE;
 if (process.env.NEXT_PUBLIC_API_DEV_MODE === 'true') {
     API_URL_BASE = process.env.NEXT_PUBLIC_API_URL_BASE_DEV;
