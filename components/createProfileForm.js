@@ -43,6 +43,18 @@
   };
   
   async handleCreateProfile() {
+    if (this.state.profileName === "") {
+      alert("Please enter a profile name");
+      return;
+    };
+    if (this.state.password === "" ) {
+      alert("Please enter a password");
+      return;
+    };
+    if (this.state.status === "") {
+      alert("Please enter a status");
+      return;
+    };
     var newProfile = await this.createProfile(this.props.newUserData)
     this.props.showProfileView(newProfile); 
   }
@@ -50,10 +62,10 @@
   render() {
     return (
       <div>   
-        <AnimatedBackground />
           <form className='form'>    
             <TextField
               fullWidth
+              required
               className="textField"
               label="Choose a Profile Name"
               id="profileName"
@@ -65,6 +77,7 @@
             {!this.props.newUserData.google_verified ?
             <TextField
               fullWidth
+              required
               className="textField"
               label="Choose a Password"
               id="password"
@@ -75,6 +88,7 @@
 
             <TextField
               fullWidth
+              required
               className="textField"
               label="Current Status"
               id="status"

@@ -6,7 +6,7 @@ import api from './apiCalls';
 import LoginScreen from './login';
 import CreateProfileForm from './createProfileForm';
 import AnimatedBackground from './animated_background';
-//require('dotenv').config();
+require('dotenv').config();
 
 console.log("update successful");
 class App extends React.Component  {    

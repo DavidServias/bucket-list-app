@@ -31,18 +31,18 @@ export default class LoginScreen extends Component {
 
     async componentDidMount() {
         /* global google*/
-       await google.accounts.id.initialize({
-         client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
-         callback: this.handleGoogleResponse
-       });
+    //    await google.accounts.id.initialize({
+    //      client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
+    //      callback: this.handleGoogleResponse
+    //    });
    
-       await google.accounts.id.renderButton(
-         document.getElementById("signInDiv"), 
-         {  theme: 'outline', 
-            size: 'large', 
-            width: '290px'   
-        }
-       );
+    //    await google.accounts.id.renderButton(
+    //      document.getElementById("signInDiv"), 
+    //      {  theme: 'outline', 
+    //         size: 'large', 
+    //         width: '290px'   
+    //     }
+    //    );
      }
 
      // Called when "Create Profile" button is clicked

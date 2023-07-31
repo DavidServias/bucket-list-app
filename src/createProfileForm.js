@@ -6,6 +6,9 @@
   import api from './apiCalls';
 
 
+  // TODO: This file may not be  being used. It is a copy of createProfileForm.js
+  // THIS FILE MAY NOT BE NEEDED
+
   export class CreateProfileForm extends React.Component {
     constructor(props){
       super(props);
@@ -27,8 +30,6 @@
     userData['profile_name'] = this.state.profileName;
     userData['status'] = this.state.status;
     userData['password'] = this.state.password;
-    // userData['bucket_list'] = [];
-    // userData['deep_thoughts'] = [];
     //test
     console.log("user data sent to create new profile:");
     console.log(userData);
@@ -43,6 +44,19 @@
   };
   
   async handleCreateProfile() {
+    if (this.state.profileName === "") {
+      alert("Please enter a profile name");
+      return;
+    };
+    if (this.state.status === "") {
+      alert("Please enter a status");
+      return;
+    };
+    if (this.state.password === "") {
+      alert("Please enter a password");
+      return;
+    };
+
     var newProfile = await this.createProfile(this.props.newUserData)
     this.props.showProfileView(newProfile); 
   }
@@ -50,12 +64,12 @@
   render() {
     return (
       <div>   
-        <AnimatedBackground />
           <form className='form'>    
             <TextField
+              required
               fullWidth
               className="textField"
-              label="Choose a Profile Name"
+              label="Profile Name"
               id="profileName"
               placeholder={"Choose a Profile Name"}   
               onChange={this.handleChange}
@@ -75,10 +89,11 @@
 
             <TextField
               fullWidth
+              required
               className="textField"
-              label="Current Status"
+              label="Current Status Test"
               id="status"
-              placeholder={"Current Status"}     
+              placeholder={"Current Status test"}     
               onChange={this.handleChange}
               type="text"
             />
