@@ -97,7 +97,7 @@ export default class LoginScreen extends Component {
     }
 
     async handleLogin() {
-        
+        console.log("handleLogin()");
         console.log("handleLogin()");
         let body = '{"profile_name": "' + this.state.username + '",';
         body += '"password" : "' + this.state.password + '"}';
