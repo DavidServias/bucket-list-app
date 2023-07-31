@@ -68,7 +68,7 @@ async function loginWithPassword(requestBody) {
     };
 
     var response= await fetch(url, options);
-    //response = response.json();
+    console.log(response);
     return await response.json();
 
 };
