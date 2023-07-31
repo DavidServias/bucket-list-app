@@ -1,5 +1,12 @@
+//require('dotenv').config();
 
-const API_URL_BASE = process.env.NEXT_PUBLIC_API_URL_BASE;
+let API_URL_BASE;
+if (process.env.NEXT_PUBLIC_API_DEV_MODE === 'true') {
+    API_URL_BASE = process.env.NEXT_PUBLIC_API_URL_BASE_DEV;
+} else {
+    API_URL_BASE = process.env.NEXT_PUBLIC_API_URL_BASE_PROD;
+};
+
 
 
 /*******************************************************
