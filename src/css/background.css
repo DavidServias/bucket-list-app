@@ -10,13 +10,15 @@
 
 html {
   height:100%;
+  background-color: var(--color6);
 }
 
 body {
   margin:0;
+  background-color: var(--color6);
 }
 
-.bg {
+/* .bg {
   animation:slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, var(--color5) 50%, var(--color6) 50%);
   bottom:0;
@@ -48,7 +50,7 @@ body {
   text-align:center;
   top:50%;
   transform:translate(-50%, -50%);
-}
+} */
 
 h1 {
   font-family:monospace;

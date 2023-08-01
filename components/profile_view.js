@@ -7,7 +7,6 @@ import AboutMe from '../components/about_me';
 import Box from '@mui/material/Box';
 import DeepThoughts from '../components/deep_thoughts';
 import Grid from '@mui/material/Grid';
-import AnimatedBackground from './animated_background';
 
 //PROPS:
 // profileName
@@ -32,7 +31,6 @@ class ProfileView extends React.Component {
     render(){  
         return (
             <Box  sx={{ width: '100%', backgroundColor: 'transparent' }}>
-                    <AnimatedBackground/>
                     <MyAppBar setUserToNull = {this.props.setUserToNull}/>
                     <Grid container 
                         spacing={3}                 

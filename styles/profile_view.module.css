@@ -14,16 +14,8 @@
 
 #about-me-container img {
     width: 80%; 
-    /* border: red 2px solid; */
     background-color: var(--background-color);
 }
-
-
-/* xs, extra-small: 0px
-sm, small: 600px
-md, medium: 900px
-lg, large: 1200px
-xl, extra-large: 1536px */
 
 
 @media only screen and (max-width: 600px) {
@@ -40,20 +32,12 @@ xl, extra-large: 1536px */
     }
 }
 
-/* @media only screen and (min-width: 600px) {
-    #about-me-container img {
-        width: 40%; 
-
-    }
-} */
-
 @media only screen and (min-width: 600px) {
     #about-me-container img {
         width: 80%; 
 
     }
 }
-
 
 #bucket-list-container {
     width: 70%;
@@ -79,7 +63,7 @@ xl, extra-large: 1536px */
 
 #deep-thought-container {
     height: var(--heightA);
-    background-color: var(--background-color);
+    background-color: green;
     width: 70%;
     margin: auto;
 }

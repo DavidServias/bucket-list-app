@@ -2,7 +2,6 @@
   import TextField from '@mui/material/TextField';
   import Button from '@mui/material/Button';
   import "../styles/login.module.css";
-  import AnimatedBackground from './animated_background';
   import api from '../src/apiCalls';
 
 

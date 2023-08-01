@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from "../styles/login.module.css";
-import AnimatedBackground from './animated_background';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import api from "../src/apiCalls";
@@ -123,7 +122,6 @@ export default class LoginScreen extends Component {
   render() {
     return (
         <div >
-           <AnimatedBackground/>
             <div className={styles.login_button}>
                 <form className={styles.form}>
                     <TextField
